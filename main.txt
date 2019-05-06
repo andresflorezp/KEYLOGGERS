@@ -1,0 +1,41 @@
+@echo off
+title This is a file bat
+color e
+mode 50,30
+: inicio
+
+echo =======================
+echo =======================
+echo ==Welcome To Bat ==
+echo =======================
+echo =======================
+echo =======================
+
+echo.
+echo.
+
+echo These are options
+echo 1) Open Youtube Type 1
+echo 2) Open Calculator Type 2
+echo 3) Exit Type 3
+pause>nul
+set /p menu=opcion=
+goto %menu%
+
+:1
+cls 
+start https://www.youtube.com
+pause>nul
+cls
+goto inicio
+
+:2
+cls
+start calc.exe
+pause>nul
+cls
+goto inicio
+
+:3
+cls
+exit
